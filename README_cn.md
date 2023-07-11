@@ -125,8 +125,36 @@ export PYTHONPATH=$PWD:$PYTHONPATH
 
 ```shell
 pip install cython;
+pip install pycocotools;
 pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI # for Linux
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI # for Windows
+```
+
+Error
+```
+(base) PS C:\Users\lutao\Desktop\damo-yolo> pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI # for Windows
+Looking in indexes: https://pypi.org/simple, http://mirrors.aliyun.com/pypi/simple
+Collecting git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+  Cloning https://github.com/philferriere/cocoapi.git to c:\users\lutao\appdata\local\temp\pip-req-build-3xt4r0fm
+  Running command git clone --filter=blob:none --quiet https://github.com/philferriere/cocoapi.git 'C:\Users\lutao\AppData\Local\Temp\pip-req-build-3xt4r0fm'
+  fatal: unable to access 'https://github.com/philferriere/cocoapi.git/': Recv failure: Connection was reset
+  error: subprocess-exited-with-error
+  
+  × git clone --filter=blob:none --quiet https://github.com/philferriere/cocoapi.git 'C:\Users\lutao\AppData\Local\Temp\pip-req-build-3xt4r0fm' did not run succes
+sfully.
+  │ exit code: 128
+  ╰─> See above for output.
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× git clone --filter=blob:none --quiet https://github.com/philferriere/cocoapi.git 'C:\Users\lutao\AppData\Local\Temp\pip-req-build-3xt4r0fm' did not run successf
+ully.
+│ exit code: 128
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
 ```
 </details>
 
